@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>form</title>
+<style>
+    .btn{
+        background-color: black;
+        font-size: 13px;
+        color: white;
+
+
+    }
+    .white{
+        background-color: white;
+        font-size: 13px;
+    }
     
+</style>
+</head>
+<body id="body">
+    <form>
+     <label for="">Name</label><input type="text" placeholder="Name"><br>
+        <br>
+       email <input type="email" placeholder="email"><br>
+       <br>
+       gender <input type="radio" name="gender" id="">male
+       <input type="radio" name="gender" id="">female
+       <input type="radio" name="gender" id="">other<br>
+    <br>
+    mobile <input type="tel" name="" id=""><br>
+    <br>
+    <input type="file" name="" id=""><br>
+    <br>
+    <input type="submit" name="" id=""><br>
+    <br>
+    <input type="reset" name="" id="">
+</form>
+    <button class="btn" onclick="dark_theam()">dark theam</button>
+    <button class="white" onclick="white_theam()">white theam</button>
+    
+
+   
+    <script>
+        function dark_theam(){
+var body = document.getElementById('body');
+            body.style.backgroundColor = 'black';
+            body.style.color = 'yellow';
+
+        }
+        function white_theam(){
+var body = document.getElementById('body');
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+
+        }
+
+    </script>
 </body>
 </html>
